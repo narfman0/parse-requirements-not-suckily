@@ -23,4 +23,4 @@ if pip_version >= (1, 5):
 
 
 def parse_requirements(requirements_path='requirements.txt'):
-    return [str(req.req) for req in parse_requirements(requirements_path)]
+    return [str(req.req) for req in parse_partial(requirements_path)]
